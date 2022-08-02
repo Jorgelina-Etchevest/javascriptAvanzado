@@ -5,11 +5,42 @@ body{
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-items: auto;
     gap: 40px;
     margin-right: 20px;
     margin-top: 20px;
 }
+
+#pantallaGrande{
+    animation-name: mover;
+    animation-duration: 3s;
+   }
+   
+   #pantallaChica{
+       animation-name: mover;
+       animation-duration: 3s;
+      }
+      
+   #tecladoGrande{
+       animation-name: mover;
+       animation-duration: 3s;
+      }   
+   
+   #tecladoChico{
+       animation-name: mover;
+       animation-duration: 3s;
+      }   
+   
+   @keyframes mover{
+       0%{
+           transform: translateY(5px);
+       }
+   
+       100%{
+           transform: translateY(20px);
+       }
+   }
+   
 
 .cabecera{
     background-image: url("../imagenes/codigo.jpeg");
