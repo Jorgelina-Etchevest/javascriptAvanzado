@@ -1,21 +1,74 @@
 body{
     background-color: #427E80 ;
+    margin: 0;
 }
 
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 20px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
+
+#pantallaGrande{
+    animation-name: mover;
+    animation-duration: 3s;
+}
+   
+#pantallaChica{
+       animation-name: mover;
+       animation-duration: 3s;
+}
+      
+#tecladoGrande{
+       animation-name: mover;
+       animation-duration: 3s;
+}   
+   
+#tecladoChico{
+       animation-name: mover;
+       animation-duration: 3s;
+}   
+   
+@keyframes mover{
+    0%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }  
+    20%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    40%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    60%{
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    80%{
+        transform: translateY(10px);
+        opacity: 1;
+    }    
+    100%{
+           transform: translateY(10px);
+           opacity: 1;
+    }
+}
+   
 
 .cabecera{
     background-image: url("../imagenes/codigo.jpeg");
     background-size: cover;
     background-attachment: fixed;
-    height: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
 }
 
 li{
@@ -23,6 +76,7 @@ li{
 }
 
 .botones{
+display:inline-block;
 padding: 10px; 
 background-color: white;
 color: grey;
@@ -38,11 +92,17 @@ position: relative;
     box-shadow: 1px 1px #154454;
 }
 
+li{
+    list-style: none;
+}
+
+
 h2{
     color: beige;
     text-align: center;
     font-size: xx-large;
-    padding-top: 250px;
+    background-color: #2d2d2d;
+    text-shadow: 4px 4px black;
 }
 
 h3{
@@ -96,17 +156,3 @@ h3{
     background-size: cover;
 }
 
-footer{
-    margin-top: 300px;
-    height: 100px;
-    background-color: #2d2d2d;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.fondo{
-    color: white;
-    margin-left: 100px;
-    margin-right: 100px;
-}
