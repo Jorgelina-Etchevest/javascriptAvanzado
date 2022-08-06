@@ -15,21 +15,25 @@ nav{
 #pantallaGrande{
     animation-name: mover;
     animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
    
 #pantallaChica{
        animation-name: mover;
        animation-duration: 3s;
+       animation-fill-mode: forwards;
 }
       
 #tecladoGrande{
        animation-name: mover;
        animation-duration: 3s;
+       animation-fill-mode: forwards;
 }   
    
 #tecladoChico{
        animation-name: mover;
        animation-duration: 3s;
+       animation-fill-mode: forwards;
 }   
    
 @keyframes mover{
