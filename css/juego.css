@@ -162,10 +162,10 @@ img{
 
 .volver{
     margin-top: 150px;
-    margin-left: 500px;
+    margin-left: 600px;
     padding: 10px; 
-    background-color: white;
-    color: grey;
+    background-color: grey;
+    color: white;
     text-decoration: none; 
     text-transform: uppercase;
     border-radius: 10px; 
