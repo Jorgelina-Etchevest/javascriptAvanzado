@@ -4,33 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/juego.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Proyecto Final</title>
 </head>
 <body>
     <header>
         <nav>
+        <a href="./index.html">
             <svg width="200px" height="80px">
                 <rect id= "pantallaGrande" x="45" y="5" width="60" height="35"rx="6" fill="#3F6797"></rect>
                 <rect id= "pantallaChica" x="50" y="10" width="50" height="25"rx="6" fill="#B1D5E4"></rect>
                 <polygon id="tecladoGrande" points="55 45, 95 45, 115 62, 30 62" fill="#3F6797"></polygon>
                 <polygon id="tecladoChico" points="57 48, 92 48, 104 58, 43 58" fill="#B1D5E4"></polygon>
             </svg>
-
+        </a>
             <div>
-                <li class="botones"><a href="./historia.html"></a>HISTORIA</li>
-                <li class="botones"><a href="./juego.html">JUGUEMOS</a> </li>
+                <a href="./historia.html"><li class="botones">HISTORIA</li></a>
+                <a href="./juego.html"><li class="botones">JUGUEMOS</li></a>
             </div>
         </nav>
 
         <div class="cabecera">
-            <h2>JUGUEMOS UN POCO</h2>
+            <h5 class="titulo_juego">JUGUEMOS UN POCO</h5>
         </div>
     </header>
 
     <main>
        
-      <h3>ARMEMOS EL ROMPECABEZAS Y VEAMOS QUE IMAGEN ES...</h3>
+      <h6>Armemos el rompecabezas y veamos que imagen es...</h6>
 
     <div class="padre">
       <div class="rompecabezas_uno">Arrastre y suelte la imagen aquí</div>
@@ -44,7 +45,7 @@
         <img class="imagen_uno"src="./imagenes/rompe1.png">
     </div>
   
-    <a href="./juego.html" class="volver">VOLVER A JUGAR</a>
+    <a href="./juego.html" class="volver">Reiniciar</a>
    
 
     </main>

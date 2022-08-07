@@ -6,6 +6,7 @@ function inicio() {
     video.play()
     duracion.textContent=`Duración Video: ${video.duration}`
 }
+
 function pausar() {
     video.pause()
 }

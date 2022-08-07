@@ -1,3 +1,5 @@
+/*Código general para todas las páginas*/
+
 body{
     background-color: #427E80 ;
     margin: 0;
@@ -19,21 +21,21 @@ nav{
 }
    
 #pantallaChica{
-       animation-name: mover;
-       animation-duration: 3s;
-       animation-fill-mode: forwards;
+    animation-name: mover;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
       
 #tecladoGrande{
-       animation-name: mover;
-       animation-duration: 3s;
-       animation-fill-mode: forwards;
+    animation-name: mover;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }   
    
 #tecladoChico{
-       animation-name: mover;
-       animation-duration: 3s;
-       animation-fill-mode: forwards;
+    animation-name: mover;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }   
    
 @keyframes mover{
@@ -63,7 +65,6 @@ nav{
     }
 }
    
-
 .cabecera{
     background-image: url("../imagenes/codigo.jpeg");
     background-size: cover;
@@ -72,23 +73,25 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
- 
 }
 
 li{
     list-style: none;
+    margin: 20px;
 }
 
 .botones{
-display:inline-block;
-padding: 10px; 
-background-color: white;
-color: grey;
-text-decoration: none; 
-text-transform: uppercase;
-border-radius: 10px; 
-box-shadow: 6px 6px #154454;
-position: relative;
+    display:inline-block;
+    padding: 10px; 
+    background-color: white;
+    color: grey;
+    text-decoration: none; 
+    text-transform: uppercase;
+    border-radius: 10px; 
+    box-shadow: 6px 6px #154454;
+    color: #154454;
+    font-size: 300;
+    position: relative;
 }
 
 .botones:active{
@@ -96,71 +99,20 @@ position: relative;
     box-shadow: 1px 1px #154454;
 }
 
-h1{
-    color: beige;
-    font-size: xx-large;
-    text-shadow: 4px 4px black;
-    background-color: #2d2d2d;
-}
-
-img{
-    width: 400px;
-    height: 200px;
-}
-
-.tarjeta{
-    width: 400px;
-    height: 400px;
-    border: 4px solid #154454;
-    background-color: white;
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: 300px;
-}
-
-.contenedor{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 20px;
-    padding-left: 150px;
-}
-
-h2 {
-    color: beige;
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 1.5px 1.5px #154454;
-}
-
-.otroBoton{
-padding: 10px; 
-background-color: #427E80;
-color: white;
-text-decoration: none; 
-text-transform: uppercase;
-border-radius: 10px; 
-box-shadow: 6px 6px #154454;
-position: relative;
-}
-
-.otroBoton:active{
-    top: 4px;
-    box-shadow: 1px 1px #154454;
-}
-
 footer{
-    height: 160px;
+    height: 120px;
     color: white;
     background-color: #2d2d2d;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    margin-bottom: 20px;
 }
 
 .fondo{
     margin-left:100px;
     margin-right: 50px;
+    color: white;
 }
 
 .uno{
@@ -170,4 +122,266 @@ footer{
 
 .dos{
 margin-left: 400px;
+}
+
+/**INDEX**/
+
+h1{
+    color: beige;
+    font-size: 40px;
+    text-shadow: 4px 4px black;
+    background-color: #2d2d2d;
+}
+
+.imagen_tarjeta{
+    width: 100%;
+}
+
+.tarjeta{
+    width: 350px;
+    height: 400px;
+    border: 5px solid #154454;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 300px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10px;
+    padding-left: 150px;
+}
+
+.contenido {
+    color: beige;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 1.5px 1.5px #154454;
+}
+
+.otroBoton{
+    padding: 10px; 
+    background-color: #427E80;
+    color: white;
+    text-decoration: none; 
+    text-transform: uppercase;
+    border-radius: 10px; 
+    box-shadow: 6px 6px #154454;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.otroBoton:active{
+    top: 4px;
+    box-shadow: 1px 1px #154454;
+}
+
+/*HISTORIA*/
+
+.historia{
+    color: beige;
+    text-align: center;
+    font-size: 40px;
+    background-color: #2d2d2d;
+    text-shadow: 4px 4px black;
+}
+
+.texto_historia{
+    font-size: 35px;
+    color: white;
+    text-shadow: 1.5px 1.5px #154454;
+}
+
+h6{
+    font-size: 35px;
+    color: white;
+    text-shadow: 1.5px 1.5px #154454;
+    text-align: center;
+}
+
+p{
+    color: black
+}
+
+.texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-content: center;
+    align-items: center;
+}
+
+video{
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
+.video{
+    margin: 0 auto;
+}
+
+.boton{
+    padding: 10px; 
+    width: 80px;
+    background-color: white;
+    color: grey;
+    text-decoration: none; 
+    text-transform: uppercase;
+    border-radius: 10px; 
+    box-shadow: 6px 6px #154454;
+    position: absolute;
+    bottom: 20px;
+}
+
+.parteVideo{
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    background-color:black;
+}
+
+.inicio{
+left: 30px;
+}
+
+.pausa{
+left: 130px;
+}
+
+.duracion{
+    bottom: 10px;
+    text-align: right;
+    color: white;
+}
+
+.barra{
+    background-color: #1d1d1d;
+    height: 100px;
+}
+
+.footer_historia{
+    margin-top: 100px;
+}
+
+.imagen_fondo{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+/*JUEGO*/
+
+.titulo_juego{
+    color: beige;
+    text-align: center;
+    font-size: 40px;
+    background-color: #2d2d2d;
+    text-shadow: 4px 4px black;
+}
+
+h6{
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+
+.imagen_uno{
+    width: 280px;
+    height: 400px;
+}
+
+.imagen_dos{
+    width: 280px;
+    height: 400px;
+    margin-right:10px;
+    margin-left: 10px;
+}
+
+.imagen_tres{
+    width: 280px;
+    height: 400px;
+}
+
+.rompecabezas_uno{
+    width: 280px;
+    height: 400px;
+    border: 3px solid black;
+    background-color: grey;
+    text-align: center;
+    background-size: cover;
+}
+
+.rompecabezas_dos{
+    width: 280px;
+    height: 400px;
+    border: 3px solid black;
+    background-color: grey;
+    text-align: center;
+}
+
+.rompecabezas_tres{
+    width: 280px;
+    height: 400px;
+    border: 3px solid black;
+    background-color: grey;
+    text-align: center;
+}
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.partes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.volver{
+    margin-top: 150px;
+    margin-left: 500px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f0f5e4;
+    color:#154454;
+    text-decoration: none; 
+    border-radius: 10px; 
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 6px 6px #154454;
+    position: relative;
+    font-size: 200;
+    width: 400px;
+  
+}
+    
+.volver:active{
+        top: 4px;
+        box-shadow: 1px 1px #154454;
+}
+
+
+main{
+    margin-bottom: 50px;
 }
