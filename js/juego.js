@@ -46,7 +46,7 @@ zona_uno.addEventListener('dragover',(evento)=>{
 
 zona_uno.addEventListener('drop',(evento)=>{
     let info=evento.dataTransfer.getData("Text");
-    zona_uno.innerHTML=`<img src="${info}"/>`;  
+    zona_uno.innerHTML=`<img src="${info}"/>`; 
 }) 
 
 
