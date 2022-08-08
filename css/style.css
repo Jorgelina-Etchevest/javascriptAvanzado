@@ -170,7 +170,7 @@ h1{
    
 }
 
-.otroBoton{
+.otroBoton_uno{
     padding: 10px; 
     background-color: #427E80;
     color: white;
@@ -184,10 +184,30 @@ h1{
     margin-bottom: 20px;
 }
 
-.otroBoton:active{
+.otroBoton_uno:active{
     top: 4px;
     box-shadow: 1px 1px #154454;
 }
+
+.otroBoton_dos{
+    padding: 10px; 
+    background-color: #427E80;
+    color: white;
+    text-decoration: none; 
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px; 
+    box-shadow: 6px 6px #154454;
+    position: relative;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+.otroBoton_dos:active{
+    top: 4px;
+    box-shadow: 1px 1px #154454;
+}
+
 
 /*HISTORIA*/
 
