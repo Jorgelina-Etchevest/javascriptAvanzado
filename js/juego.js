@@ -46,7 +46,8 @@ zona_uno.addEventListener('dragover',(evento)=>{
 
 zona_uno.addEventListener('drop',(evento)=>{
     let info=evento.dataTransfer.getData("Text");
-    zona_uno.innerHTML=`<img src="${info}"/>`; 
+    zona_uno.innerHTML=`<img src="${info}" width="280px" height="400px"/>`;
+
 }) 
 
 
@@ -59,7 +60,7 @@ zona_dos.addEventListener('dragover',(evento)=>{
 
 zona_dos.addEventListener('drop',(evento)=>{
     let info=evento.dataTransfer.getData("Text");
-    zona_dos.innerHTML=`<img src="${info}"/>`;  
+    zona_dos.innerHTML=`<img src="${info}" width="280px" height="400px"/>`;  
 })
 
 
@@ -71,6 +72,6 @@ zona_tres.addEventListener('dragover',(evento)=>{
 
 zona_tres.addEventListener('drop',(evento)=>{
     let info=evento.dataTransfer.getData("Text");
-    zona_tres.innerHTML=`<img src="${info}"/>`;  
+    zona_tres.innerHTML=`<img src="${info}"width="280px" height="400px"/>`;  
 })
  
